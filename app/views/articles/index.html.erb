@@ -1,9 +1,23 @@
-<h1>this is an index page </h1>
+<h1>Articles Listing Page </h1>
 
 
-<% @articles.each do |article| %>
-    <div>
-   <%= link_to article.title, article %>
-   <%=  article.description %>
-   </div>
- <% end %>
+<table>
+  <thead> 
+    <tr> 
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+</thead>
+
+  <tbody>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= link_to article.title, article %></td>
+      <td><%= article.description%> </td>
+      <td>placeholder</td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
