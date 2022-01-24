@@ -89,6 +89,7 @@ GEM
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    htmlbeautifier (1.4.1)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.0.2)
@@ -214,6 +215,7 @@ DEPENDENCIES
   bootsnap
   byebug
   capybara
+  htmlbeautifier
   importmap-rails
   jbuilder
   pg
